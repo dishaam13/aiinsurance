@@ -1,0 +1,111 @@
+TrustAI Project Structure
+==========================
+
+trustai_final/
+│
+├── 📄 README.md                    ← Full documentation
+├── 📄 QUICK_START.txt              ← 30-second setup guide
+├── 📄 DEMO_SCRIPT.md               ← 7-minute video script
+├── 📄 customer_template.csv        ← Sample CSV for testing
+│
+├── 🔧 backend/                     ← FastAPI Server
+│   ├── main.py                     ← API endpoints + CSV upload
+│   ├── agent.py                    ← AI segmentation logic
+│   ├── requirements.txt            ← Python dependencies
+│   └── customers.csv               ← (Optional) Pre-loaded data
+│
+└── 🎨 frontend/                    ← React App
+    ├── package.json                ← Node dependencies
+    ├── public/
+    │   └── index.html
+    └── src/
+        ├── App.js                  ← Main app with LEFT SIDEBAR
+        ├── index.js
+        └── screens/
+            ├── UploadScreen.js     ← CSV upload interface (First screen)
+            │
+            ├── 🌟 WOW FACTOR DEMOS (3 active):
+            │   ├── JourneySimulator.js    ← Customer journey animation
+            │   ├── BeforeAfter.js         ← Performance comparison
+            │   └── BiasAlert.js           ← Real-time bias detection
+            │
+            └── 🚧 COMING SOON (6 features):
+                ├── LiveAgentChat.js       ← AI thinking log
+                ├── AgentRunner.js         ← Agent execution
+                ├── Dashboard.js           ← Live stats
+                ├── FairnessMonitor.js     ← Fairness metrics
+                ├── ExplainScreen.js       ← Explainability
+                └── CustomerPanel.js       ← Customer controls
+
+USER JOURNEY FLOW:
+==================
+
+1. Upload Screen (UploadScreen.js)
+   ↓ User uploads CSV
+   ↓
+2. Left Sidebar Appears (App.js)
+   ├── TrustAI Logo
+   ├── "4 Customers Loaded" badge
+   ├── WOW DEMOS (3 clickable)
+   └── COMING SOON (6 grayed out)
+   ↓
+3. Select WOW Demo
+   ├── 🎭 Customer Journey   → JourneySimulator.js
+   ├── 📊 Before vs After    → BeforeAfter.js
+   └── 🚨 Bias Alert Demo    → BiasAlert.js
+
+DESIGN CHANGES:
+===============
+
+OLD DESIGN:
+  ✗ Top horizontal nav (cramped)
+  ✗ All 10 features visible (overwhelming)
+  ✗ No clear focus on WOW factors
+
+NEW DESIGN:
+  ✓ Left sidebar (spacious, professional)
+  ✓ 3 WOW demos prominently featured
+  ✓ 6 "Coming Soon" features (shows vision)
+  ✓ CSV upload as first screen (killer feature)
+  ✓ "Upload New CSV" button in footer
+
+KEY FEATURES:
+=============
+
+✅ Real CSV Upload
+   - Drag & drop interface
+   - Template download
+   - AI processes in <2 seconds
+
+✅ Dynamic Customer Journey
+   - Uses uploaded customers
+   - 11 animated steps
+   - Real product recommendations
+
+✅ Impressive Animations
+   - Counter animations (2% → 8%)
+   - Step-by-step reveals
+   - Red alert flash for bias
+
+✅ Professional UI
+   - Dark gradient sidebar
+   - Clean white content area
+   - Consistent branding
+
+DEMO HIGHLIGHTS:
+================
+
+1. CSV Upload (30 sec)
+   → Shows real data integration
+
+2. Journey (2.5 min)
+   → Most impressive animation
+   → Shows AI decision-making
+
+3. Before/After (2 min)
+   → Clear business value
+   → Animated counters = memorable
+
+4. Bias Alert (2 min)
+   → Most unique feature
+   → Red flash = dramatic moment

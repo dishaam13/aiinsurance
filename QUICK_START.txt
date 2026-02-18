@@ -1,0 +1,58 @@
+============================================
+  TRUSTAI - QUICK START GUIDE
+============================================
+
+STEP 1: OPEN TWO TERMINALS
+---------------------------
+
+Terminal 1 (Backend):
+  cd backend
+  pip install -r requirements.txt
+  python -m uvicorn main:app --reload
+
+Terminal 2 (Frontend):
+  cd frontend
+  npm install
+  npm start
+
+STEP 2: OPEN BROWSER
+--------------------
+Go to: http://localhost:3000
+
+STEP 3: UPLOAD CSV
+------------------
+- Click "Download Template" or use customer_template.csv
+- Drag & drop the CSV file
+- Click "Upload & Process"
+
+STEP 4: EXPLORE WOW DEMOS
+-------------------------
+Use left sidebar:
+  1. Customer Journey - Watch AI create campaigns
+  2. Before vs After - See the impact
+  3. Bias Alert Demo - Real-time bias detection
+
+============================================
+  TROUBLESHOOTING
+============================================
+
+Backend won't start?
+  → Make sure Python 3.8+ installed
+  → Try: python -m uvicorn main:app --reload
+  → Check port 8000 is free
+
+Frontend won't start?
+  → Make sure Node.js installed
+  → Delete node_modules folder
+  → Run: npm install again
+  → Check port 3000 is free
+
+CSV upload fails?
+  → Make sure backend is running
+  → Check CSV has all columns:
+    name, age, income, marital_status, dependents, location
+
+============================================
+For detailed instructions: See README.md
+For demo script: See DEMO_SCRIPT.md
+============================================
